@@ -21,6 +21,10 @@ img {
     width: 100%;
 }
 
+h1 {
+    font-size: 40px;
+}
+
 h1, h2, h3 {
     font-family: 'Fredoka', Consolas, 'Courier New', monospace;
 }
@@ -309,7 +313,7 @@ footer h3 {
 /* Styling introduktion section på vidensiden */
 
 .intro-viden {
-    margin: 2em;
+    margin: 1.5em;
 }
 
 .intro-viden .viden {
@@ -600,3 +604,160 @@ footer h3 {
     margin-bottom: 0.4em;
 }
 
+/* Styling af introduktion på privatliv siden */
+
+.tilbage-viden {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.tilbage-viden a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+}
+
+.tilbage-viden p {
+    font-weight: 600;
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+}
+
+.intro-privatliv {
+    margin: 1.5em;
+}
+
+.intro-privatliv .privatliv-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.privatliv-div img {
+    width: 300px;
+    height: 206px;
+}
+
+.privatliv-indhold p {
+    font-size: 14px;
+}
+
+/* Styling af første tabel på privatliv siden */
+
+.første-tabel {
+    background-color: var(--blue);
+    margin: 1.5em;
+    border-radius: 25px;
+    padding: 0.5em;
+}
+
+.første-tabel a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.billede-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.billede-1 img {
+    width: 267px;
+    height: 108px;
+}
+
+/* Styling af første section med 1 og 2 på privatliv siden */
+
+.privatliv-1-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 20% 80%);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 1.5em 1.5em 1.5em;
+    align-items: center;
+    gap: 1em;
+}
+
+.privatliv-1-2 .stjerne-1 img {
+    width: 80px;
+    height: 80px;
+}
+
+.privatliv-1-2 .stjerne-2 img {
+    width: 90px;
+    height: 95px;
+}
+
+/* Styling af anden tabel på privatliv siden */
+
+.anden-tabel {
+    background-color: var(--blue);
+    margin: 1.5em;
+    border-radius: 25px;
+    padding: 0.5em;
+}
+
+.anden-tabel a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.anden-tabel p {
+    font-weight: 600;
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+}
+
+.billede-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.billede-2 img {
+    width: 267px;
+    height: 108px;
+    margin-left: -0.6em;
+}
+
+/* Styling af anden section med 3 og 4 på privatliv siden */
+
+.privatliv-3-4 {
+    display: grid;
+    grid-template-columns: repeat(1, 20% 80%);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 1.5em 1.5em 1.5em;
+    align-items: center;
+    gap: 1em;
+}
+
+.privatliv-3-4 .stjerne-3 img {
+    width: 83px;
+    height: 87px;
+}
+
+.privatliv-3-4 .stjerne-4 img {
+    width: 94px;
+    height: 90px;
+    margin-left: -0.5em;
+}
+
+/* Styling af et tip section på privatliv siden */
+
+.et-tip {
+    background-color: var(--blue);
+    margin: 1.5em;
+    border-radius: 25px;
+    padding: 0.5em;
+}
+
+.et-tip img {
+    width: 331px;
+    height: 140px;
+}
+
+.et-tip .tip {
+    font-weight: 600;
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+}
