@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/736dedceae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <header class="header-2">
+        <a class="logo-2" href="index.html"><img src="/img/Logoet.png" alt="KlikKlogt logo"></a>
+
+        <nav>
+            <ul>
+                <li>
+                    <button>
+                        Menu <i class="fa-solid fa-bars"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-kontakt">
+            <p class="kontakt-start">Kontakt</p>
+            
+            <div class="kontakt-indhold">
+                <h1>Kontakt</h1>
+                <p>Skriv til mig - svarer så hurtigt som muligt.</p>
+            </div>
+        </section>
+
+        <section class="kontakt-section">
+
+            <div class="kontakter">
+            <div class="e-mail">
+                <i class="fa-regular fa-envelope"></i>
+                <div class="p-tekst">
+                <p>E-mail</p>
+                <p>KlikKlogt@mail.dk</p>
+                </div>
+            </div>
+
+            <div class="telefon">
+                <i class="fa-solid fa-phone"></i>
+                <div class="p-tekst">
+                <p>Telefon</p>
+                <p>+45 12345678</p>
+                </div>
+            </div>
+
+            <div class="adresse">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="p-tekst">
+                <p>Adresse</p>
+                <p>5000, Odense C</p>
+                </div>
+            </div>
+
+            <div class="some">
+                <p>Følg med på SoMe </p>
+                <a href="https://www.tiktok.com/en/" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/?locale=da_DK" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            </div>
+
+            <img src="/img/kontakt-billede.png" alt="Billede af person med telefon og brev">
+        </section>
+
+        <section class="formular">
+            <h2>Har du spørgsmål? Send en besked</h2>
+
+            <div class="navn">
+                <label for="name">Navn</label>
+                <input type="text" id="name" name="name" required placeholder="Skriv dit navn">
+            </div>
+
+            <div class="mail">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="Skriv din e-mail">
+            </div>
+
+            <div class="emne-valg">
+                <label for="subject">Hvad handler din besked om?</label>
+                <select id="subject" name="subject" required>
+                <option value="" disabled selected>Vælg emne</option>
+                <option value="privatliv">Privatliv</option>
+                <option value="digital-sikkerhed">Digital sikkerhed</option>
+                <option value="ai-sociale-medier">AI & sociale medier</option>
+                <option value="kritisk-tænkning">Kritisk tænkning</option>
+                </select>
+            </div>
+
+            <div class="besked">
+                <label for="message">Din besked</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Skriv din besked her..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send besked<i class="fa-solid fa-arrow-right-long"></i></button>
+        </section>
+
+        <section class="velkommen">
+
+            <div class="velkommen-section">
+                <img src="/img/Blomst.png" alt="Billede af blomst og pære">
+                <div class="tekst">
+                    <p>Du er altid velkommen!</p>
+                    <p>Til at kontakte mig, hvis du har spørgsmål, feedback eller gode ideer.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+        <section class="start">
+        <div class="logo">
+            <a href="index.html"><img src="/img/Logoet.png" alt="KlikKlogt logo"></a>
+        </div>
+
+        <div class="genveje">
+            <h3>Genveje</h3>
+        <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="viden.html">Viden</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        </div>
+
+        <div class="kontak-genveje">
+            <h3>Kontakt</h3>
+        <ul>
+            <li><a href="mailto:KlikKlogt@mail.dk">E-mail</a></li>
+            <li><a href="tel:+4512345678">Telefon</a></li>
+            <li><a href="kontakt.html">Adresse</a></li>
+        </ul>
+        </div>
+        </section>
+
+        <div class="sociale-medier">
+        <a href="https://www.tiktok.com/en/" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/?locale=da_DK" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    </main>
+
+</body>
+</html>

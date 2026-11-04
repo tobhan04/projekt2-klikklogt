@@ -1,0 +1,602 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    --green: #85D7AB;
+    --white: #ffffff;
+    --blue: #7AC5FF;
+    --lightpurple: #CE9FE9;
+    --red: #FF929B;
+    --purple: #554262;
+    --black: #000000;
+    --beige: #F7F6EF;
+}
+
+/* General styling */
+
+body {
+    background-color: var(--beige);
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+}
+
+p, a, summary, button {
+    font-family: 'Nunito Sans', Consolas, 'Courier New', monospace;
+    font-size: 18px;
+}
+
+/* Styling i header på forsiden */
+
+.header-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: calc(100% - 0.5em);
+    z-index: 10;
+}
+
+.header-1 .logo {
+    width: 193px;
+    height: 61px;
+}
+
+.header-1 ul {
+    list-style: none;
+}
+
+.header-1 button {
+    background-color: transparent;
+    color: var(--white);
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3em;
+    border: none;
+}
+
+.header-1 button .fa-bars {
+    font-size: 1.5em;
+}
+
+/* Styling af hero section på forsiden */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    object-fit: cover;
+    display: block;
+    height: 750px;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 3em;
+    left: 2em;
+    right: 2em;
+    color: var(--white);
+    z-index: 2;
+}
+
+.hero-content .grøn {
+    color: var(--green);
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0.8em;
+}
+
+.hero-content h1 {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.hero-content .h1-2 {
+    font-size: 48px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+/* Styling af introduktion section på forsiden */
+
+.intro {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.intro h2 {
+    font-size: 24px;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    grid-column: 1/5;
+    grid-row: 1/5;
+}
+
+.emne-1, .emne-2, .emne-3, .emne-4 {
+    margin: 0 2em 4em 2em;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+.emne-1 {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    border: 3px solid var(--blue);
+}
+
+.emne-1 svg {
+    background-color: var(--blue);
+    padding: 0.3em 0.8em 0.3em 0.8em;
+}
+
+.emne-2 {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    border: 3px solid var(--lightpurple);
+}
+
+.emne-2 svg {
+    background-color: var(--lightpurple);
+    padding: 0.3em 0.8em 0.3em 0.8em;
+}
+
+.emne-3 {
+    grid-column: 1/5;
+    grid-row: 4/5;
+    border: 3px solid var(--green);
+}
+
+.emne-3 svg {
+    background-color: var(--green);
+    padding: 0.3em 0.8em 0.3em 0.8em;
+}
+
+.emne-4 {
+    grid-column: 1/5;
+    grid-row: 5/5;
+    border: 3px solid var(--red);
+}
+
+.emne-4 svg {
+    background-color: var(--red);
+    padding: 0.3em 0.8em 0.3em 0.8em;
+}
+
+svg {
+    width: 4rem;
+    height: 4rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling video section på forsiden */
+
+.video {
+    background-color: var(--green);
+    margin: 0 2em 4em 2em;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.video p {
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+.video h2 {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+}
+
+.videoen {
+    width: 100%;
+    padding: 0.15em;
+    border-radius: 10px;
+}
+
+.video .video-kort a {
+    text-decoration: none;
+    color: var(--black);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.video .video-kort .fa-circle-play {
+    font-size: 2.3em;
+}
+
+/* Styling af footer */
+
+footer {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+footer .start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+
+footer .logo {
+    width: 193px;
+    height: 61px;
+}
+
+footer .fa-brands {
+    color: var(--white);
+    font-size: 2em;
+}
+
+footer .fa-tiktok {
+    margin-left: 0.5em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--white);
+    line-height: 1.4;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Styling i header på de andre sider */
+
+.header-2 {
+    background-color: var(--purple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-2 .logo-2 {
+   width: 193px;
+    height: 61px;
+    margin-left: 0.5em;
+}
+
+.header-2 ul {
+    list-style: none;
+}
+
+.header-2 button {
+    background-color: transparent;
+    color: var(--white);
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3em;
+    border: none;
+    margin-right: 0.5em;
+}
+
+.header-2 button .fa-bars {
+    font-size: 1.5em;
+}
+
+/* Styling introduktion section på vidensiden */
+
+.intro-viden {
+    margin: 2em;
+}
+
+.intro-viden .viden {
+    margin-bottom: 0.5em;
+}
+
+.intro-viden .intro-indhold h1 {
+    margin-bottom: 0.5em;
+}
+
+.intro-viden .viden {
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+    font-weight: 600;
+}
+
+.intro-viden .intro-indhold {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-indhold img {
+    width: 184px;
+    height: 146px;
+}
+
+/* Styling af emne section på videnssiden */
+
+.emne-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.emne-section h2 {
+    font-size: 26px;
+    margin-bottom: 2em;
+}
+
+.emne-privatliv, .emne-sikkerhed, .emne-ai, .emne-kritisk {
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 1em;
+    border-radius: 25px;
+}
+
+.emne-section img {
+    width: 160px;
+    height: 138px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.emne-indhold a {
+    text-decoration: none;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    gap: 0.3em
+}
+
+.emne-privatliv {
+    border: 3px solid var(--blue);
+}
+
+.emne-privatliv a {
+    background-color: var(--blue);
+    padding: 0.2em 2em 0.2em 2em;
+    border-radius: 25px;
+}
+
+.emne-sikkerhed {
+    border: 3px solid var(--lightpurple);
+}
+
+.emne-sikkerhed a {
+    background-color: var(--lightpurple);
+    padding: 0.2em 2em 0.2em 2em;
+    border-radius: 25px;
+}
+
+.emne-ai {
+    border: 3px solid var(--green);
+}
+
+.emne-ai a {
+    background-color: var(--green);
+    padding: 0.2em 2em 0.2em 2em;
+    border-radius: 25px;
+}
+
+.emne-kritisk {
+    border: 3px solid var(--red);
+}
+
+.emne-kritisk a {
+    background-color: var(--red);
+    padding: 0.2em 2em 0.2em 2em;
+    border-radius: 25px;
+}
+
+/* Styling af introduktion på kontakt siden */
+
+.intro-kontakt {
+    margin-bottom: 2em;
+}
+
+.intro-kontakt .kontakt-start {
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+    font-weight: 600;
+    margin: 1.5em;
+}
+
+.intro-kontakt .kontakt-indhold {
+    margin: 1.5em;
+}
+
+.kontakt-section {
+    margin: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kontakt-section img {
+    width: 216px;
+    height: 289px;
+}
+
+.kontakt-section .kontakter .fa-solid, .fa-envelope {
+    font-size: 2em;
+}
+
+.kontakt-section .kontakter .fa-envelope {
+    background-color: var(--blue);
+    border-radius: 50%;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontakt-section .kontakter .fa-phone {
+    background-color: var(--green);
+    border-radius: 50%;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontakt-section .kontakter .fa-location-dot {
+    background-color: var(--red);
+    border-radius: 50%;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.e-mail, .telefon, .adresse {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1.5em;
+}
+
+.p-tekst {
+    display: flex;
+    flex-direction: column;
+}
+
+.kontakt-section .some {
+    background-color: var(--green);
+    border-radius: 10px;
+    padding: 1em;
+    display: inline-block;
+}
+
+.kontakt-section .some p {
+    margin-bottom: 1em;
+}
+
+.kontakt-section .some .fa-brands {
+    font-size: 2em;
+    color: var(--black);
+}
+
+/* Styling af formular på kontakt siden */
+
+.formular {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em;
+    font-family: 'Nunito Sans', Consolas, 'Courier New', monospace;
+    font-size: 18px;
+}
+
+.formular h2 {
+    margin-bottom: 1em;
+}
+
+.formular .navn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.formular .mail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.formular .emne-valg {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.formular .besked {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.formular input {
+    height: 50px;
+    padding-left: 1em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 3px #929292;
+    font-size: 18px;
+}
+
+.formular select {
+    height: 50px;
+    padding-left: 1em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 3px #929292;
+    font-size: 18px;
+    color: #808080;
+}
+
+.formular button {
+    padding: 1em;
+    border-radius: 35px;
+    border: none;
+    background-color: var(--blue);
+    display: inline;
+}
+
+.formular .fa-arrow-right-long {
+    margin-left: 1em;
+}
+
+/* Styling af velkommen boksen nederst på kontakt siden */
+
+.velkommen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3em;
+    margin: 0 1.5em 3em 1.5em;
+}
+
+.velkommen-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--beige);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(89, 89, 89);
+    padding: 1em;
+}
+
+.velkommen img {
+    width: 82px;
+    height: 110px;
+}
+
+.velkommen .velkommen-section .vel {
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+
