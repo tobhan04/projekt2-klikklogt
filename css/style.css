@@ -29,7 +29,7 @@ h1, h2, h3 {
     font-family: 'Fredoka', Consolas, 'Courier New', monospace;
 }
 
-p, a, summary, button {
+p, a, button {
     font-family: 'Nunito Sans', Consolas, 'Courier New', monospace;
     font-size: 18px;
 }
@@ -46,7 +46,7 @@ p, a, summary, button {
 }
 
 .header-1 .logo {
-    width: 193px;
+    width: 250px;
     height: 61px;
 }
 
@@ -134,7 +134,7 @@ p, a, summary, button {
     align-items: center;
     gap: 15px;
     padding: 1.5em;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 
 .emne-1 {
@@ -191,12 +191,22 @@ svg {
     justify-content: center;
 }
 
+summary {
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.emne-11, .emne-22, .emne-33, .emne-44 {
+    display: none;
+}
+
 /* Styling video section på forsiden */
 
 .video {
     background-color: var(--green);
     margin: 0 2em 4em 2em;
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 30px;
 }
 
@@ -210,10 +220,10 @@ svg {
     margin-bottom: 0.5em;
 }
 
-.videoen {
+iframe {
     width: 100%;
     padding: 0.15em;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 
 .video .video-kort a {
@@ -247,13 +257,14 @@ footer .start {
 }
 
 footer .logo {
-    width: 193px;
-    height: 61px;
+    width: 300px;
+    height: 111px;
 }
 
 footer .fa-brands {
     color: var(--white);
     font-size: 2em;
+    margin-bottom: 0.5em;
 }
 
 footer .fa-tiktok {
@@ -261,19 +272,30 @@ footer .fa-tiktok {
 }
 
 footer a {
-    text-decoration: none;
+    text-decoration: ;
     color: var(--white);
-    line-height: 1.4;
+}
+
+footer a:hover {
+    text-decoration: dashed;
 }
 
 footer li {
     list-style: none;
 }
 
+footer .genveje, .kontakt-genveje, ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+
 footer h3 {
     font-weight: 600;
     font-size: 20px;
 }
+
 
 /* Styling i header på de andre sider */
 
@@ -375,6 +397,12 @@ footer h3 {
     display: flex;
     align-items: center;
     gap: 0.3em
+}
+
+.emne-indhold a:hover {
+    font-weight: 600;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .emne-privatliv {
@@ -566,6 +594,10 @@ footer h3 {
     border: none;
     background-color: var(--blue);
     display: inline;
+}
+
+.formular button:hover {
+    font-weight: 700;
 }
 
 .formular .fa-arrow-right-long {
@@ -760,4 +792,101 @@ footer h3 {
 .et-tip .tip {
     font-weight: 600;
     font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+}
+
+/* Styling af hvordan computer versionen skal se ud */
+
+@media screen and (min-width: 800px) {
+
+.hero-content h1 {
+    font-size: 40px;
+}
+
+.hero-content .h1-2 {
+    font-size: 80px;
+}
+
+summary {
+    display: none;
+}
+
+ .emne-1, .emne-2, .emne-3, .emne-4 {
+    display: none;
+}
+
+.emne-11, .emne-22, .emne-33, .emne-44 {
+    display: block;
+    grid-template-rows: repeat(6, 1fr);
+    margin: 0 1.5em 2em 1.5em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.emne-11, .emne-22, .emne-33, .emne-44, svg {
+    margin-bottom: 2em;
+}
+
+.emne-11, .emne-22, .emne-33, .emne-44, p {
+    margin-bottom: 2em;
+}
+
+.emne-11, .emne-22, .emne-33, .emne-44, .overskrift {
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.emne-11 {
+    grid-column: 1/2;
+    grid-row: 2/6;
+    border: 3px solid var(--blue);
+}
+
+.emne-11 svg {
+    background-color: var(--blue);
+    padding: 0.3em 0.8em 0.3em 0.8em;
+}
+
+.emne-22 {
+    grid-column: 2/3;
+    grid-row: 2/6;
+    border: 3px solid var(--lightpurple);
+}
+
+.emne-22 svg {
+    background-color: var(--lightpurple);
+    padding: 0.3em 0.8em 0.3em 0.8em;
+}
+
+.emne-33 {
+    grid-column: 3/4;
+    grid-row: 2/6;
+    border: 3px solid var(--green);
+}
+
+.emne-33 svg {
+    background-color: var(--green);
+    padding: 0.3em 0.8em 0.3em 0.8em;
+}
+
+.emne-44 {
+    grid-column: 4/5;
+    grid-row: 2/6;
+    border: 3px solid var(--red);
+}
+
+.emne-44 svg {
+    background-color: var(--red);
+}
+
+iframe {
+    width: 100%;
+    height: 800px;
+    padding: 0.15em;
+    border-radius: 25px;
+}
+
 }
