@@ -41,9 +41,10 @@ p, a, button {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    width: calc(100% - 0.5em);
+    width: calc(100% - 0.5em); 
     z-index: 10;
 }
+
 
 .header-1 .logo {
     width: 250px;
