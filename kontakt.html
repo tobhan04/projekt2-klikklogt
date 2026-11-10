@@ -85,19 +85,19 @@
             </div>
 
             <div class="emne-valg">
-                <label for="subject">Hvad handler din besked om?</label>
-                <select id="subject" name="subject" required>
-                <option value="" disabled selected>Vælg emne</option>
-                <option value="privatliv">Privatliv</option>
-                <option value="digital-sikkerhed">Digital sikkerhed</option>
-                <option value="ai-sociale-medier">AI & sociale medier</option>
-                <option value="kritisk-tænkning">Kritisk tænkning</option>
+                <label for="emne">Hvad handler din besked om?</label>
+                <select name="select" id="emne">
+                   <option value="0" selected disabled>Vælg emne</option>
+                   <option value="1">Privatliv</option>
+                   <option value="2">Digital sikkerhed</option>
+                   <option value="3">AI & sociale medier</option>
+                   <option value="4">Kritisk tænkning</option>
                 </select>
             </div>
 
             <div class="besked">
-                <label for="message">Din besked</label>
-                <textarea id="message" name="message" rows="5" required placeholder="Skriv din besked her..."></textarea>
+                <label for="besked">Din besked</label>
+                <textarea id="besked" name="besked" rows="10" required placeholder="Skriv din besked her..."></textarea>
             </div>
 
             <button type="submit" class="submit-btn">Send besked<i class="fa-solid fa-arrow-right-long"></i></button>
