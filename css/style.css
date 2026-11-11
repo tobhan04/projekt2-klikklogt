@@ -34,40 +34,91 @@ p, a, button {
     font-size: 18px;
 }
 
+.tekst-menu {
+    font-size: 22px;
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+}
+
+/* Hop til hovedindhold */ /* Fundet pÃ¥ denne side: https://www.a11y-collective.com/blog/skip-to-main-content/ */
+
+.screen-reader-text {
+  position: absolute; /* Positions the link absolutely on the page, allowing it to be placed anywhere.*/
+  left: -9999px; /* Moves the link far off-screen to the left, making it invisible to sighted users.*/
+  z-index: 999; /*Sets a high z-index, ensuring that the link will be on top of other page elements if it becomes visible.*/
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0; /*Sets the link's opacity to 0, making it fully transparent and invisible.*/
+}
+
+.screen-reader-text:focus {
+  left: 50%; /*When the link receives focus (e.g., when a keyboard user tabs to it), it is repositioned horizontally to the centre of the screen.*/
+  transform: translateX(-50%); /*This centres the link horizontally by moving it back to the left by 50% of its own width.*/
+  opacity: 1; /*The link's opacity is set to 1, making it fully visible.*/
+}
 /* Styling i header på forsiden */
 
-.header-1 {
+
+.header-1 nav .logo {
+    width: 12em;
+    height: 4em;
+}
+
+/* Burgermenu */
+
+.header-1 nav #bars {
+        display: flex;
+        background-color: transparent;
+        color: var(--white);
+        font-size: 2.3em;
+        border: none;
+        cursor: pointer;
+        font-size: 2em;
+    }
+
+.header-1 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     width: calc(100% - 0.5em); 
     z-index: 10;
+    padding: 1em;
 }
 
-
-.header-1 .logo {
-    width: 250px;
-    height: 61px;
-}
-
-.header-1 ul {
-    list-style: none;
-}
-
-.header-1 button {
-    background-color: transparent;
-    color: var(--white);
-    font-size: 22px;
-    display: flex;
-    flex-direction: row;
+.header-1 nav ul {
+    display: none;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 0.3em;
-    border: none;
 }
 
-.header-1 button .fa-bars {
-    font-size: 1.5em;
+.header-1 nav li {
+    display: flex; 
+}
+
+.header-1 nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--black);
+    padding: 0.5em;
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+}
+
+.header-1 nav a:hover {
+    font-weight: 600;
+}
+
+.header-1 nav .show {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    padding: 0;
+    width: 50%;
+    background-color: rgb(182, 182, 182);
+    z-index: 1;
 }
 
 /* Styling af hero section på forsiden */
@@ -298,38 +349,64 @@ footer h3 {
 
 
 /* Styling i header på de andre sider */
+.header-2 .logo-2 {
+    width: 12em;
+    height: 4em;
+}
 
-.header-2 {
+/* Burgermenu */
+
+.header-2 nav #bars {
+        display: flex;
+        background-color: transparent;
+        color: var(--white);
+        font-size: 2.3em;
+        border: none;
+        cursor: pointer;
+        font-size: 2em;
+    }
+
+.header-2 nav {
     background-color: var(--purple);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1em;
 }
 
-.header-2 .logo-2 {
-   width: 193px;
-    height: 61px;
-    margin-left: 0.5em;
-}
-
-.header-2 ul {
-    list-style: none;
-}
-
-.header-2 button {
-    background-color: transparent;
-    color: var(--white);
-    font-size: 22px;
-    display: flex;
-    flex-direction: row;
+.header-2 nav ul {
+    display: none;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 0.3em;
-    border: none;
-    margin-right: 0.5em;
 }
 
-.header-2 button .fa-bars {
-    font-size: 1.5em;
+.header-2 nav li {
+    display: flex; 
+}
+
+.header-2 nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--black);
+    padding: 0.5em;
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+}
+
+nav a:hover {
+    font-weight: 600;
+}
+
+.header-2 nav .show {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    padding: 0;
+    width: 50%;
+    background-color: rgb(182, 182, 182);
+    z-index: 1;
 }
 
 /* Styling introduktion section på vidensiden */
@@ -359,8 +436,8 @@ footer h3 {
 }
 
 .intro-indhold img {
-    width: 184px;
-    height: 146px;
+    width: 50%;
+    height: 100%;
 }
 
 /* Styling af emne section på videnssiden */
@@ -371,32 +448,38 @@ footer h3 {
 }
 
 .emne-section h2 {
-    font-size: 26px;
-    margin-bottom: 2em;
+    font-size: 20px;
 }
 
 .emne-privatliv, .emne-sikkerhed, .emne-ai, .emne-kritisk {
     margin: 1em;
+    padding: 1em;
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 1em;
     border-radius: 25px;
 }
 
 .emne-section img {
-    width: 160px;
-    height: 138px;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
     border-radius: 25px;
+}
+
+.emne-indhold {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5em;
+    gap: 1em;
 }
 
 .emne-indhold a {
     text-decoration: none;
     color: var(--black);
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 0.3em
+    gap: 0.6em;
 }
 
 .emne-indhold a:hover {
@@ -411,7 +494,7 @@ footer h3 {
 
 .emne-privatliv a {
     background-color: var(--blue);
-    padding: 0.2em 2em 0.2em 2em;
+    padding: 0.2em 1em 0.2em 1em;
     border-radius: 25px;
 }
 
@@ -421,7 +504,7 @@ footer h3 {
 
 .emne-sikkerhed a {
     background-color: var(--lightpurple);
-    padding: 0.2em 2em 0.2em 2em;
+    padding: 0.2em 1em 0.2em 1em;
     border-radius: 25px;
 }
 
@@ -431,7 +514,7 @@ footer h3 {
 
 .emne-ai a {
     background-color: var(--green);
-    padding: 0.2em 2em 0.2em 2em;
+    padding: 0.2em 1em 0.2em 1em;
     border-radius: 25px;
 }
 
@@ -441,7 +524,7 @@ footer h3 {
 
 .emne-kritisk a {
     background-color: var(--red);
-    padding: 0.2em 2em 0.2em 2em;
+    padding: 0.2em 1em 0.2em 1em;
     border-radius: 25px;
 }
 
@@ -469,8 +552,12 @@ footer h3 {
 }
 
 .kontakt-section img {
-    width: 216px;
-    height: 289px;
+    width: 50%;
+    height: 100%;
+}
+
+.kontakt-section p {
+    font-size: 18px;
 }
 
 .kontakt-section .kontakter .fa-solid, .fa-envelope {
@@ -503,10 +590,10 @@ footer h3 {
     align-items: center;
     justify-content: center;
 }
+
 .e-mail, .telefon, .adresse {
     display: flex;
     align-items: center;
-    gap: 15px;
     margin-bottom: 1.5em;
 }
 
@@ -683,6 +770,10 @@ textarea {
     font-family: 'Fredoka', Consolas, 'Courier New', monospace;
 }
 
+.tilbage-viden a:hover {
+    border-bottom: 2px solid black;
+}
+
 .tilbage-viden p {
     font-weight: 600;
     font-family: 'Fredoka', Consolas, 'Courier New', monospace;
@@ -700,8 +791,8 @@ textarea {
 }
 
 .privatliv-div img {
-    width: 300px;
-    height: 206px;
+    width: 50%;
+    height: 100%;
 }
 
 .privatliv-indhold p {
@@ -830,6 +921,83 @@ textarea {
 
 @media screen and (min-width: 800px) {
 
+.active {
+    font-weight: 600;
+}
+
+/* Header 1 */
+
+.header-1 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.header-1 nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.header-1 nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--white);
+    padding: 0.5em;
+}
+
+.header-1 nav a:hover {
+    font-weight: 600;
+}
+
+.header-1 nav .show {
+    display: none;
+}
+
+.header-1 nav #bars {
+    display: none; /* Fjerne burgermenu ikon fra desktopversionen */
+}
+
+/* Header 2 */
+
+.header-2 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.header-2 nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.header-2 nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--white);
+    padding: 0.5em;
+}
+
+.header-2 nav a:hover {
+    font-weight: 600;
+}
+
+.header-2 nav .show {
+    display: none;
+}
+
+.header-2 nav #bars {
+    display: none; /* Fjerne burgermenu ikon fra desktopversionen */
+}
+
+/* Hero tekst større */
 .hero-content h1 {
     font-size: 40px;
 }
@@ -838,6 +1006,7 @@ textarea {
     font-size: 80px;
 }
 
+/* Intro indhold på forsiden */
 summary {
     display: none;
 }
@@ -920,5 +1089,135 @@ iframe {
     padding: 0.15em;
     border-radius: 25px;
 }
+
+/* Viden siden styling til desktop */
+.intro-viden {
+    margin: 2em;
+}
+
+.intro-viden p {
+    font-size: 24px;
+}
+
+.intro-viden h1 {
+    font-size: 54px;
+}
+
+.intro-viden .viden {
+    margin-bottom: 1em;
+}
+
+.intro-viden .intro-indhold h1 {
+    margin-bottom: 0.5em;
+}
+
+.intro-viden .viden {
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+    font-weight: 600;
+}
+
+.intro-viden .intro-indhold {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-indhold img {
+    width: 50%;
+    height: 100%;
+}
+
+/* Viden siden emner styling til desktop */
+.emne-section h2 {
+    font-size: 32px;
+}
+
+.emne-indhold {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    gap: 10em;
+}
+
+.emne-indhold a {
+    font-size: 24px;
+}
+
+/* Kontakt siden styling til desktop */
+
+.kontakt-section {
+    margin: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kontakt-section img {
+    width: 40%;
+    height: 100%;
+}
+
+.kontakt-section p {
+    font-size: 24px;
+}
+
+.kontakt-section .kontakter .fa-solid, .fa-envelope {
+    font-size: 4em;
+}
+
+.kontakt-section .kontakter .fa-envelope {
+    background-color: var(--blue);
+    border-radius: 50%;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontakt-section .kontakter .fa-phone {
+    background-color: var(--green);
+    border-radius: 50%;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontakt-section .kontakter .fa-location-dot {
+    background-color: var(--red);
+    border-radius: 50%;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.e-mail, .telefon, .adresse {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.p-tekst {
+    display: flex;
+    flex-direction: column;
+}
+
+.kontakt-section .some {
+    background-color: var(--green);
+    border-radius: 10px;
+    padding: 1em;
+    display: inline-block;
+}
+
+.kontakt-section .some p {
+    margin-bottom: 2em;
+    font-size: 24px;
+}
+
+.kontakt-section .some .fa-brands {
+    font-size: 4em;
+    color: var(--black);
+}
+
 
 }

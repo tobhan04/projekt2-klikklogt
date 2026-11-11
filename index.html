@@ -5,25 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script> <!-- link til js file og brug defer så filen loader efter HTML -->
     <script src="https://kit.fontawesome.com/736dedceae.js" crossorigin="anonymous"></script>
     <link rel="icon" href="/img/ikon.png" type="image/png">
 </head>
 <body>
-    <header class="header-1">
-        <a class="logo" href="index.html"><img src="/img/Logoet.png" alt="KlikKlogt logo"></a>
+<!-- Hop til hovedindhold -->
+    <a class="screen-reader-text" href="#hovedindhold">Hop til hovedindhold</a>
 
-        <nav>
-            <ul>
-                <li>
-                    <button>
-                        Menu <i class="fa-solid fa-bars"></i>
-                    </button>
-                </li>
-            </ul>
-        </nav>
+<!-- Header og navigation -->
+    <header class="header-1">
+      <nav>
+        <a class="logo" href="index.html"><img src="/img/Logoet.png" alt="KlikKlogt logo"></a>
+        <!-- Navigation -->
+        <!-- Bars -->
+        <button
+          id="bars"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="open navigation"
+        >
+          <!-- aria-expanden fortæller skærmoplæseren at menuen er lukket-->
+          <!--aria-label giver skærmlæseren en besked om hvad knappen gør-->
+          <!--button gør menuen trykbar så den kan åbnes via tastatur-->
+          <!--aria-controls fortæller skærmoplæseren at menuen er styret af knappen-->
+          <p class="tekst-menu">Menu</p>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!--Navigation-->
+        <ul id="menu">
+          <!-- id="menu" references the button with aria-controls -->
+          <li><a class="active" href="index.html">Forside</a></li>
+          <li><a href="/viden.html">Viden</a></li>
+          <li><a href="/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
+    <main id="hovedindhold">
         <section class="hero">
             <img src="/img/hero-bilede.jpg" alt="Billede af pige med telefon i sengen">
 
