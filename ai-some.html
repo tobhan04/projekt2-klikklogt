@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & sociale medier</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script> <!-- link til js file og brug defer så filen loader efter HTML -->
+    <script src="https://kit.fontawesome.com/736dedceae.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/img/ikon.png" type="image/png">
+</head>
+<body>
+     <!-- Hop til hovedindhold -->
+    <a class="screen-reader-text" href="#hovedindhold">Hop til hovedindhold</a>
+
+<!-- Header og navigation -->
+    <header class="header-2">
+      <nav>
+        <a class="logo-2" href="index.html"><img src="/img/Logoet.png" alt="KlikKlogt logo"></a>
+        <!-- Navigation -->
+        <!-- Bars -->
+        <button
+          id="bars"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="open navigation"
+        >
+          <!-- aria-expanden fortæller skærmoplæseren at menuen er lukket-->
+          <!--aria-label giver skærmlæseren en besked om hvad knappen gør-->
+          <!--button gør menuen trykbar så den kan åbnes via tastatur-->
+          <!--aria-controls fortæller skærmoplæseren at menuen er styret af knappen-->
+          <p class="tekst-menu">Menu</p>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!--Navigation-->
+        <ul id="menu">
+          <!-- id="menu" references the button with aria-controls -->
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="/viden.html">Viden</a></li>
+          <li><a href="/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<main id="hovedindhold">
+    <section class="intro-privatliv">
+        <div class="tilbage-viden">
+        <a href="viden.html">Viden</a>
+        <i class="fa-solid fa-arrow-right-long"></i>
+        <p>AI & sociale medier</p>
+        </div>
+
+         <div class="ai-some-div">
+        <div class="privatliv-indhold">
+            <h1>Fremtidens teknologi og sociale medier</h1>
+            <p>Kunstig intelligens også kaldet AI er allerede en del af vores hverdag. Den kan hjælpe os med at finde information, skabe billeder og skrive tekster. På sociale medier påvirker AI også, hvad vi ser i vores feed. </p>
+        </div>
+
+        <div class="billede-p">
+        <img src="/img/ai-some-b.png" alt="Billede af robot med sociale medier logoer">
+        </div>
+        </div>
+    </section>
+
+    <section class="første-tabel-3">
+        <div class="billede-1">
+        <img src="/img/AI-stat.png" alt="Tabel af dansker der avender AI hver dag eller hver uge">
+        </div>
+
+        <a href="https://nyheder.tv2.dk/tech/2026-02-26-unges-brug-af-ai-skaber-interessant-paradoks-viser-ny-rapport">Kilde: TV2 Unges brug af AI skaber "interessant paradoks", viser ny rapport</a>
+    </section>
+
+    <section class="ai-some-1-2">
+        <div class="stjerne-1">
+        <img src="/img/Stjerne-1.png" alt="Billede af stjerne 1">
+        </div>
+        <div class="tekst-1">
+            <h2>Tænk inden du deler oplysninger</h2>
+            <p>Overvej, om andre skal kunne kende din adresse, dit telefonnummer eller din lokation. Del kun det, du er tryg ved, at andre kan se.</p>
+        </div>
+
+        <div class="stjerne-2">
+        <img src="/img/stjerne-2.png" alt="Billede af stjerne 2">
+        </div>
+
+        <div class="tekst-2">
+            <h2>Gik dine privatindstillinger igennem</h2>
+            <p>Tjek, hvem der kan se dine opslag, billeder og profiloplysninger. Accepter kun venneanmodninger fra personer, du kender eller har god grund til at stole på. Tit vælger os unge at accepterer alle mulige man ikke kan, men man ved aldrig hvem der er på den anden side af skærmen</p>
+        </div>
+    </section>
+
+</main>

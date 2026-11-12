@@ -1086,6 +1086,93 @@ textarea {
     width: 100%
 }
 
+/* Styling af introduktion på digital sikkerhed siden */
+.tilbage-viden {
+    display: flex;
+    align-self: center;
+    gap: 0.6em;
+    margin-top: 1em;
+    margin-left: 1.5em;
+}
+
+.tilbage-viden a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+}
+
+.tilbage-viden a:hover {
+   font-weight: 700;
+}
+
+.tilbage-viden p {
+    font-weight: 600;
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+}
+
+.ai-some-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.5em 0 1.5em;
+}
+
+.ai-some-div h1 {
+    margin-top: 1em;
+}
+
+/* Styling af første tabel på AI & sociale medier siden */
+
+.første-tabel-3 {
+    background-color: var(--green);
+    margin: 1.5em;
+    border-radius: 25px;
+    padding: 0.5em;
+}
+
+.første-tabel-3 a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.første-tabel-3 .billede-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.første-tabel-3 .billede-1 img {
+    width: 60%;
+}
+
+/* Styling af første section med 1 og 2 på AI & sociale medier siden */
+
+.ai-some-1-2 h2 {
+    font-size: 18px;
+}
+
+.ai-some-1-2 p {
+    font-size: 16px;
+}
+
+.ai-some-1-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 20% 75%);
+    grid-template-rows: repeat(2, 0.5fr);
+    margin: 0 1.5em 1.5em 1.5em;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.ai-some-1-2 .stjerne-1 img {
+    width: 100%;
+}
+
+.ai-some-1-2 .stjerne-2 img {
+    width: 100%;
+}
+
 /* Styling af hvordan computer versionen skal se ud */
 
 @media screen and (min-width: 800px) {
@@ -1556,5 +1643,51 @@ iframe {
     font-size: 18px;
 }
 
+/* AI & sociale medier siden styling desktop */
+.ai-some-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1.5em 0 1.5em;
+}
+
+/* Styling af første section med 1 og 2 på digital sikkerhed siden til desktop */
+
+.ai-some-1-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 20% 50%);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 1.5em 1.5em 1.5em;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.ai-some-1-2 h2 {
+    font-size: 32px;
+}
+
+.ai-some-1-2 p {
+    font-size: 18px;
+}
+
+/* Styling af første section med 3 og 4 på AI & sociale medier siden til desktop */
+.ai-some-3-4 {
+    display: grid;
+    grid-template-columns: repeat(1, 20% 50%);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 1.5em 1.5em 1.5em;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.ai-some-3-4 h2 {
+    font-size: 32px;
+}
+
+.ai-some-3-4 p {
+    font-size: 18px;
+}
 
 }
