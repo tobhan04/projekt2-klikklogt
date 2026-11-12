@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital sikkerhed</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script> <!-- link til js file og brug defer så filen loader efter HTML -->
+    <script src="https://kit.fontawesome.com/736dedceae.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/img/ikon.png" type="image/png">
+</head>
+<body>
+     <!-- Hop til hovedindhold -->
+    <a class="screen-reader-text" href="#hovedindhold">Hop til hovedindhold</a>
+
+<!-- Header og navigation -->
+    <header class="header-2">
+      <nav>
+        <a class="logo-2" href="index.html"><img src="/img/Logoet.png" alt="KlikKlogt logo"></a>
+        <!-- Navigation -->
+        <!-- Bars -->
+        <button
+          id="bars"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="open navigation"
+        >
+          <!-- aria-expanden fortæller skærmoplæseren at menuen er lukket-->
+          <!--aria-label giver skærmlæseren en besked om hvad knappen gør-->
+          <!--button gør menuen trykbar så den kan åbnes via tastatur-->
+          <!--aria-controls fortæller skærmoplæseren at menuen er styret af knappen-->
+          <p class="tekst-menu">Menu</p>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!--Navigation-->
+        <ul id="menu">
+          <!-- id="menu" references the button with aria-controls -->
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="/viden.html">Viden</a></li>
+          <li><a href="/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<main id="hovedindhold">
+    <section class="intro-privatliv">
+        <div class="tilbage-viden">
+        <a href="viden.html">Viden</a>
+        <i class="fa-solid fa-arrow-right-long"></i>
+        <p>Digital sikkerhed</p>
+        </div>
+
+        <!-- Bruger lidt af de samme class navne, fordi det skal kunne det samme i css selvom de har navn med privatliv, men tænkte ikke før jeg var gået igang, men for mig gør det ikke noget-->
+        <div class="digital-sikkerhed-div">
+        <div class="privatliv-indhold">
+            <h1>Er du sikker, når du er online?</h1>
+            <p>Hver dag møder du links, beskeder og hjemmesider på nettet. Men ved du om du kan stole på dem? Her kan du lærer lidt om digital sikkerhed, og find ud af, hvordan du passer bedre på dig selv online.</p>
+        </div>
+
+        <div class="billede-p">
+        <img src="/img/digital-sikkerhed-2.png" alt="Billede af to personer den ene er bange for at blive svindlet, hvor den ander er svindleren">
+        </div>
+        </div>
+    </section>
+
+        <section class="første-tabel-2">
+        <div class="billede-1">
+        <img src="/img/tabel-sikkerhed.png" alt="Tabel af dansker der begymrer sig om svindel">
+        </div>
+
+        <a href="https://samsik.dk/wp-content/uploads/2025/09/Danskernes-informationssikkerhed-2024.pdf">Kilde: Danskernes informations sikkerhed 2024 (side 7)</a>
+    </section>
+    
+    <section class="privatliv-1-2">
+        <div class="stjerne-1">
+        <img src="/img/Digi-1.png" alt="Billede af stjerne 1">
+        </div>
+        <div class="tekst-1">
+            <h2>Pas på mistænkelige links</h2>
+            <p>Klik ikke på links, bare fordi du modtager dem i en besked eller mail. Nogle links kan være falske, hvor der er nogen der forsøger at stjæle dine oplysninger..</p>
+        </div>
+
+        <div class="stjerne-2">
+        <img src="/img/Digi-2.png" alt="Billede af stjerne 2">
+        </div>
+
+        <div class="tekst-2">
+            <h2>Hold dine enheder opdaterede</h2>
+            <p>En god ide er at opdatere din telefon, computer og apps. Opdateringer kan nemlig rette sikkerhedsfejl og gøre det sværere for andre at udnytte svagheder på dine enheder.</p>
+        </div>
+    </section>
+
+    <section class="test-viden">
+        <h2>Test din viden</h2>
+        <p class="spg">
+            Du får en sms fra din bank, hvor der står, at din konto
+            bliver lukket, hvis du ikke logger ind via et link.
+            Hvad gør du?
+        </p>
+
+        <form>
+            <label class="valg">
+                <input type="radio" name="svar" value="1">
+                <span>Jeg trykker på linket med det samme.</span>
+            </label>
+
+            <label class="valg">
+                <input type="radio" name="svar" value="2">
+                <span>Jeg sletter beskeden og kontakter banken via deres rigtige hjemmeside.</span>
+            </label>
+
+            <label class="valg">
+                <input type="radio" name="svar" value="3">
+                <span>Jeg sender beskeden videre til en ven.</span>
+            </label>
+
+            <button type="button">Tjek dit svar</button>
+        </form>
+    </section>
+
+    <section class="digital-sikkerhed-3-4">
+        <div class="stjerne-3">
+        <img src="/img/Digi-3.png" alt="Billede af stjerne 3">
+        </div>
+
+        <div class="tekst-3">
+            <h2>Pas på digital svindel</h2>
+            <p>Svindlere kan udgive sig for at være fra banken, politiet eller offentlige myndigheder for at få fat i dine personlige oplysninger. De forsøger ofte at stresse dig, så du handler uden at tænke dig om. Du skal huske altid at afbryde et opkald, hvis du er i tvivl om, hvem der ringer. Tag dig god tid, og lad dig ikke blive presset..</p>
+        </div>
+
+        <div class="stjerne-4">
+        <img src="/img/Digi-4.png" alt="Billede af stjerne 4">
+        </div>
+
+        <div class="tekst-4">
+            <h2>Hvis din identitet bliver misbrugt</h2>
+            <p>Identitetstyveri sker, når andre bruger dine personlige oplysninger uden din tilladelse. Det kan fx være dit CPR-nummer eller dine loginoplysninger. Du skal huske altid at Reagere hurtigt ved mistanke om misbrug eller Spær dit MitID, hvis det er blevet misbrugt.</p>
+        </div>
+    </section>
+
+    <section class="et-tip-2">
+        <img src="/img/tip-tip-2.png" alt="Billede at linje og til en lyspære med et tip, hvor der står: Når du bruger gratis Wi-Fi på fx caféer, skoler eller i lufthavne, skal du være forsigtig. Nogle netværk kan være usikre, og andre kan forsøge at få fat i dine personlige oplysninger. Tjek, at du forbinder til det rigtige netværk.">
+    </section>
+</main>
+        <footer>
+        <section class="start">
+        <div class="logo">
+            <a href="index.html"><img src="/img/Logoet.png" alt="KlikKlogt logo"></a>
+        </div>
+
+        <div class="genveje">
+            <h3>Genveje</h3>
+        <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="viden.html">Viden</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        </div>
+
+        <div class="kontak-genveje">
+            <h3>Kontakt</h3>
+        <ul>
+            <li><a href="mailto:KlikKlogt@mail.dk">E-mail</a></li>
+            <li><a href="tel:+4512345678">Telefon</a></li>
+            <li><a href="kontakt.html">Adresse</a></li>
+        </ul>
+        </div>
+        </section>
+
+       <section class="bund-footer">
+        <div class="sociale-medier">
+        <a href="https://www.tiktok.com/en/" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/?locale=da_DK" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+
+        <div class="rettigheder">
+        <p>© 2026 KlikKlogt.dk - Alle rettigheder forbeholdes</p>
+        </div>
+        </section>
+    </footer>

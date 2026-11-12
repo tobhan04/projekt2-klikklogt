@@ -923,6 +923,169 @@ textarea {
 }
 
 
+/* Styling af introduktion på digital sikkerhed siden */
+.tilbage-viden {
+    display: flex;
+    align-self: center;
+    gap: 0.6em;
+    margin-top: 1em;
+    margin-left: 1.5em;
+}
+
+.tilbage-viden a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+}
+
+.tilbage-viden a:hover {
+   font-weight: 700;
+}
+
+.tilbage-viden p {
+    font-weight: 600;
+    font-family: 'Fredoka', Consolas, 'Courier New', monospace;
+}
+
+.digital-sikkerhed-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.5em 0 1.5em;
+}
+
+.digital-sikkerhed-div h1 {
+    margin-top: 1em;
+}
+
+
+/* Styling af første tabel på digital sikkerhed siden */
+
+.første-tabel-2 {
+    background-color: var(--lightpurple);
+    margin: 1.5em;
+    border-radius: 25px;
+    padding: 0.5em;
+}
+
+.første-tabel-2 a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.første-tabel-2 .billede-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.første-tabel-2 .billede-1 img {
+    width: 60%;
+}
+
+/* Styling af første section med 1 og 2 på digital sikkerhed siden */
+
+.digital-sikkerhed-1-2 h2 {
+    font-size: 18px;
+}
+
+.digital-sikkerhed-1-2 p {
+    font-size: 16px;
+}
+
+.digital-sikkerhed-1-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 20% 75%);
+    grid-template-rows: repeat(2, 0.5fr);
+    margin: 0 1.5em 1.5em 1.5em;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.digital-sikkerhed .stjerne-1 img {
+    width: 100%;
+}
+
+.digital-sikkerhed .stjerne-2 img {
+    width: 100%;
+}
+
+/* Styling af test viden på digital sikkerhed siden */
+.test-viden {
+    background-color: var(--lightpurple);
+    margin: 0 1.5em 2em 1.5em;
+    border-radius: 25px;
+    padding: 1em;
+}
+
+.test-viden h2 {
+    margin-bottom: 1em;
+}
+
+.test-viden p {
+    margin-bottom: 1em;
+}
+
+.test-viden form {
+    display: flex;
+    flex-direction: column;
+}
+
+.test-viden span {
+    font-family: 'Nunito Sans', Consolas, 'Courier New', monospace;
+    font-size: 18px;
+}
+
+.test-viden button {
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: 25px;
+    padding: 0.5em 0 0.5em 0;
+    margin-top: 1em;
+}
+
+/* Styling af anden section med 3 og 4 på digital sikkerhed siden */
+.digital-sikkerhed-3-4 h2 {
+    font-size: 18px;
+}
+
+.digital-sikkerhed-3-4 p {
+    font-size: 16px;
+}
+
+.digital-sikkerhed-3-4 {
+    display: grid;
+    grid-template-columns: repeat(1, 20% 75%);
+    grid-template-rows: repeat(2, 0.5fr);
+    margin: 0 1.5em 1.5em 1.5em;
+    align-items: center;
+    gap: 1em;
+}
+
+.digital-sikkerhed-3-4 .stjerne-3 img {
+    width: 100%;
+}
+
+.digital-sikkerhed-3-4 .stjerne-4 img {
+    width: 100%;
+    margin-left: -0.5em;
+}
+
+/* Styling af et tip section på privatliv siden */
+
+.et-tip-2 {
+    background-color: var(--lightpurple);
+    margin: 1.5em;
+    border-radius: 25px;
+    padding: 0.5em;
+}
+
+.et-tip-2 img {
+    width: 100%
+}
+
 /* Styling af hvordan computer versionen skal se ud */
 
 @media screen and (min-width: 800px) {
@@ -1339,6 +1502,58 @@ iframe {
 .billede-2 img {
     width: 60%;
     height: 40%;
+}
+
+/* Digital sikkerhed siden styling desktop */
+.digital-sikkerhed-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1.5em 0 1.5em;
+}
+
+/* Styling af første tabel på digital sikkerhed siden */
+.første-tabel-2 .billede-1 img {
+    width: 40%;
+}
+
+/* Styling af første section med 1 og 2 på digital sikkerhed siden til desktop */
+
+.digital-sikkerhed-1-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 20% 50%);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 1.5em 1.5em 1.5em;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.digital-sikkerhed-1-2 h2 {
+    font-size: 32px;
+}
+
+.digital-sikkerhed-1-2 p {
+    font-size: 18px;
+}
+
+/* Styling af første section med 3 og 4 på digital-sikkerhed siden til desktop */
+.digital-sikkerhed-3-4 {
+    display: grid;
+    grid-template-columns: repeat(1, 20% 50%);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 1.5em 1.5em 1.5em;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.digital-sikkerhed-3-4 h2 {
+    font-size: 32px;
+}
+
+.digital-sikkerhed-3-4 p {
+    font-size: 18px;
 }
 
 
