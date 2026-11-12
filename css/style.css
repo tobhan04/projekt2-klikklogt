@@ -316,7 +316,6 @@ footer .logo {
 footer .fa-brands {
     color: var(--white);
     font-size: 2em;
-    margin-bottom: 0.5em;
 }
 
 footer .fa-tiktok {
@@ -340,6 +339,7 @@ footer .genveje, .kontakt-genveje, ul {
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
+    margin-right: 1.5em;
 }
 
 footer h3 {
@@ -347,6 +347,15 @@ footer h3 {
     font-size: 20px;
 }
 
+footer .bund-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+footer .rettigheder {
+    margin-left: 0.5em;
+}
 
 /* Styling i header på de andre sider */
 .header-2 .logo-2 {
@@ -516,6 +525,7 @@ nav a:hover {
 
 .emne-kritisk {
     border: 3px solid var(--red);
+    margin-bottom: 5em;
 }
 
 .emne-kritisk a {
@@ -526,18 +536,18 @@ nav a:hover {
 
 /* Styling af introduktion på kontakt siden */
 
-.intro-kontakt {
-    margin-bottom: 2em;
-}
-
 .intro-kontakt .kontakt-start {
     font-family: 'Fredoka', Consolas, 'Courier New', monospace;
     font-weight: 600;
-    margin: 1.5em;
+    margin: 1em 1em 3em 1em;
 }
 
 .intro-kontakt .kontakt-indhold {
     margin: 1.5em;
+}
+
+.kontakt-weight {
+    font-weight: 700;
 }
 
 .kontakt-section {
@@ -591,11 +601,6 @@ nav a:hover {
     display: flex;
     align-items: center;
     margin-bottom: 1.5em;
-}
-
-.p-tekst {
-    display: flex;
-    flex-direction: column;
 }
 
 .kontakt-section .some {
@@ -658,6 +663,7 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: inset 0 2px 3px #929292;
     font-size: 18px;
+    margin-bottom: 1.5em;
 }
 
 .formular select {
@@ -668,6 +674,7 @@ nav a:hover {
     box-shadow: inset 0 2px 3px #929292;
     font-size: 18px;
     color: #808080;
+    margin-bottom: 1.5em;
 }
 
 .formular button {
@@ -676,6 +683,7 @@ nav a:hover {
     border: none;
     background-color: var(--blue);
     display: inline;
+    margin-bottom: 1.5em;
 }
 
 .formular button:hover {
@@ -716,11 +724,10 @@ textarea {
     box-shadow: inset 0 2px 3px #929292;
     font-size: 16px;
     color: #808080;
+    margin-bottom: 1.5em;
 }
 
-
 /* Styling af velkommen boksen nederst på kontakt siden */
-
 .velkommen {
     display: flex;
     flex-direction: row;
@@ -741,14 +748,18 @@ textarea {
 }
 
 .velkommen img {
-    width: 82px;
-    height: 110px;
+    width: 9em;
+    height: 9em;
 }
 
 .velkommen .velkommen-section .vel {
     font-family: 'Fredoka', Consolas, 'Courier New', monospace;
     font-weight: 600;
     margin-bottom: 0.4em;
+}
+
+.velkommen-p {
+    font-weight: 700;
 }
 
 /* Styling af introduktion på privatliv siden */
@@ -991,6 +1002,15 @@ textarea {
     display: none; /* Fjerne burgermenu ikon fra desktopversionen */
 }
 
+/* Footer i desktop */
+footer .bund-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-right: 1.5em;
+}
+
 /* Hero tekst større */
 .hero-content h1 {
     font-size: 40px;
@@ -1146,10 +1166,36 @@ iframe {
     font-size: 24px;
 }
 
+.emne-privatliv {
+    border: 6px solid var(--blue);
+}
+
+.emne-sikkerhed {
+    border: 6px solid var(--lightpurple);
+}
+
+.emne-ai {
+    border: 6px solid var(--green);
+}
+
+.emne-kritisk {
+    border: 6px solid var(--red);
+}
+
 /* Kontakt siden styling til desktop */
+.kontakt-start {
+    font-size: 24px;
+}
+
+.kontakt-indhold h1 {
+    font-size: 48px;
+}
+
+.kontakt-indhold p {
+    font-size: 20px;
+}
 
 .kontakt-section {
-    margin: 1.5em;
     display: flex;
     justify-content: space-between;
 }
@@ -1160,7 +1206,7 @@ iframe {
 }
 
 .kontakt-section p {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .kontakt-section .kontakter .fa-solid, .fa-envelope {
@@ -1193,16 +1239,6 @@ iframe {
     align-items: center;
     justify-content: center;
 }
-.e-mail, .telefon, .adresse {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.5em;
-}
-
-.p-tekst {
-    display: flex;
-    flex-direction: column;
-}
 
 .kontakt-section .some {
     background-color: var(--green);
@@ -1219,6 +1255,15 @@ iframe {
 .kontakt-section .some .fa-brands {
     font-size: 4em;
     color: var(--black);
+}
+
+.velkommen img {
+    width: 12em;
+    height: 15em;
+}
+
+.velkommen-section .tekst {
+    margin-right: 9em;
 }
 
 /* Privatliv siden styling desktop */
