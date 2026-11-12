@@ -1073,7 +1073,7 @@ textarea {
     margin-left: -0.5em;
 }
 
-/* Styling af et tip section på privatliv siden */
+/* Styling af et tip section på digital sikkerhed siden */
 
 .et-tip-2 {
     background-color: var(--lightpurple);
@@ -1144,6 +1144,7 @@ textarea {
 
 .første-tabel-3 .billede-1 img {
     width: 60%;
+    border-radius: 25px;
 }
 
 /* Styling af første section med 1 og 2 på AI & sociale medier siden */
@@ -1166,11 +1167,77 @@ textarea {
 }
 
 .ai-some-1-2 .stjerne-1 img {
-    width: 100%;
+    width: 85%;
 }
 
 .ai-some-1-2 .stjerne-2 img {
+    width: 85%;
+}
+
+/* Styling af de to billeder på AI & sociale medier siden */
+
+.ai-billeder {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    margin: 0 1.5em 0 1.5em;
+}
+
+.ai-billeder img {
+    border-radius: 25px;
     width: 100%;
+}
+
+/* Roterer billederne: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/rotate */
+.ai-billeder .menneske {
+    transform: rotate(-4deg);
+    margin-left: 1.5em;
+}
+
+.ai-billeder .aisome {
+    transform: rotate(4deg);
+    margin-left: 1em;
+    margin-right: 1.5em;
+}
+
+/* Styling af anden section med 3 og 4 på AI & sociale medier siden */
+.ai-some-3-4 h2 {
+    font-size: 18px;
+}
+
+.ai-some-3-4 p {
+    font-size: 16px;
+}
+
+.ai-some-3-4 {
+    display: grid;
+    grid-template-columns: repeat(1, 20% 75%);
+    grid-template-rows: repeat(2, 0.5fr);
+    margin: 0 1.5em 1.5em 1.5em;
+    align-items: center;
+    gap: 1em;
+}
+
+.ai-some-3-4 .stjerne-3 img {
+    width: 85%;
+}
+
+.ai-some-3-4 .stjerne-4 img {
+    width: 85%;
+    margin-left: -0.5em;
+}
+
+/* Styling af et tip section på digital sikkerhed siden */
+
+.et-tip-3 {
+    background-color: var(--green);
+    margin: 1.5em;
+    border-radius: 25px;
+    padding: 0.5em;
+}
+
+.et-tip-3 img {
+    width: 100%
 }
 
 /* Styling af hvordan computer versionen skal se ud */
