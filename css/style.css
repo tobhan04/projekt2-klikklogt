@@ -1057,6 +1057,11 @@ textarea {
     list-style: none;
 }
 
+.svar summary:hover {
+    font-weight: 600;
+    box-shadow: 0 2px 3px black;
+} 
+
 .svar p {
     line-height: 1.6;
 }
