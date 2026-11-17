@@ -287,6 +287,10 @@ iframe {
     margin-bottom: 1em;
 }
 
+.video .video-kort a:hover {
+    font-weight: 700;
+}
+
 .video .video-kort .fa-circle-play {
     font-size: 2.3em;
 }
@@ -551,7 +555,7 @@ nav a:hover {
 }
 
 .kontakt-section {
-    margin: 1.5em;
+    margin-left: 1.5em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -559,7 +563,7 @@ nav a:hover {
 
 .kontakt-section img {
     width: 50%;
-    height: 100%;
+    margin-right: 1.5em;
 }
 
 .kontakt-section p {
@@ -577,6 +581,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 0.3em;
 }
 
 .kontakt-section .kontakter .fa-phone {
@@ -586,6 +591,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 0.3em;
 }
 
 .kontakt-section .kontakter .fa-location-dot {
@@ -595,12 +601,14 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 0.3em;
 }
 
 .e-mail, .telefon, .adresse {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
 }
 
 .kontakt-section .some {
@@ -1423,8 +1431,8 @@ summary {
     margin-bottom: 2em;
 }
 
-.emne-11, .emne-22, .emne-33, .emne-44, p {
-    margin-bottom: 2em;
+.emne-11 p, .emne-22 p, .emne-33 p, .emne-44 p {
+    margin-bottom: 1em;
 }
 
 .emne-11, .emne-22, .emne-33, .emne-44, .overskrift {
@@ -1574,56 +1582,17 @@ iframe {
     font-size: 20px;
 }
 
-.kontakt-section {
-    display: flex;
-    justify-content: space-between;
-}
-
-.kontakt-section img {
-    width: 40%;
-    height: 100%;
-}
 
 .kontakt-section p {
     font-size: 20px;
 }
 
+.kontakter .p-tekst {
+    margin: 0;
+}
+
 .kontakt-section .kontakter .fa-solid, .fa-envelope {
     font-size: 4em;
-}
-
-.kontakt-section .kontakter .fa-envelope {
-    background-color: var(--blue);
-    border-radius: 50%;
-    padding: 0.3em 0.8em 0.3em 0.8em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.kontakt-section .kontakter .fa-phone {
-    background-color: var(--green);
-    border-radius: 50%;
-    padding: 0.3em 0.8em 0.3em 0.8em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.kontakt-section .kontakter .fa-location-dot {
-    background-color: var(--red);
-    border-radius: 50%;
-    padding: 0.3em 0.8em 0.3em 0.8em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.kontakt-section .some {
-    background-color: var(--green);
-    border-radius: 10px;
-    padding: 1em;
-    display: inline-block;
 }
 
 .kontakt-section .some p {
