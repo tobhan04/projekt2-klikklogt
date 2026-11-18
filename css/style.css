@@ -558,12 +558,11 @@ nav a:hover {
 .kontakt-section {
     margin-left: 1.5em;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .kontakt-section img {
-    width: 50%;
+    width: 100%;
     margin-right: 1.5em;
 }
 
@@ -1731,6 +1730,18 @@ iframe {
 .kontakter .p-tekst {
     margin: 0;
 }
+
+.kontakt-section {
+    margin-left: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kontakt-section img {
+    width: 50%;
+}
+
 
 .kontakt-section .kontakter .fa-solid, .fa-envelope {
     font-size: 4em;
