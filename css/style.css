@@ -1033,13 +1033,24 @@ textarea {
 }
 
 .test-viden p {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 .test-viden form {
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
+}
+
+.test-viden label {
+    margin-bottom: 1.5em;
+}
+
+/* Brugte denne hjemmeside til at lave dem større: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scale */
+.test-viden input {
+    transform: scale(1.7);
+    margin-right: 0.5em;
+    cursor: pointer;
 }
 
 .test-viden span {
@@ -1295,7 +1306,7 @@ textarea {
     margin-top: 1em;
 }
 
-/* Styling af første tabel på AI & sociale medier siden */
+/* Styling af første tabel på kritisk tænkning siden */
 
 .første-tabel-4 {
     background-color: var(--red);
@@ -1320,6 +1331,121 @@ textarea {
     border-radius: 8px;
 }
 
+/* Styling af første section med 1 og 2 på kritisk tænkning siden */
+
+.kritisk-tænkning-1-2 h2 {
+    font-size: 18px;
+}
+
+.kritisk-tænkning-1-2 p {
+    font-size: 16px;
+}
+
+.kritisk-tænkning-1-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 20% 75%);
+    grid-template-rows: repeat(2, 0.5fr);
+    margin: 0 1.5em 1.5em 1.5em;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.kritisk-tænkning-1-2 .stjerne-1 img {
+    width: 85%;
+}
+
+.kritisk-tænkning-1-2 img {
+    width: 85%;
+}
+
+/* Styling af sand eller falsk section på kritisk tænkning siden */
+
+.s-f {
+    background-color: var(--red);
+    margin: 0 1.5em 2em 1.5em;
+    border-radius: 25px;
+    padding: 1em;
+}
+
+.s-f h2 {
+    margin-bottom: 1em;
+}
+
+.s-f .nyhed {
+    background-color: var(--beige);
+    border-radius: 25px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.s-f .nyhed p {
+    margin-bottom: 1.5em;
+}
+
+.svar summary {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 25px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.svar summary:hover {
+    font-weight: 600;
+    box-shadow: 0 2px 3px black;
+} 
+
+.s-f a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* Styling af anden section med 3 og 4 på kritisk tænkning siden */
+.kritisk-tænkning-3-4 h2 {
+    font-size: 18px;
+}
+
+.kritisk-tænkning-3-4 p {
+    font-size: 16px;
+}
+
+.kritisk-tænkning-3-4 {
+    display: grid;
+    grid-template-columns: repeat(1, 20% 75%);
+    grid-template-rows: repeat(2, 0.5fr);
+    margin: 0 1.5em 1.5em 1.5em;
+    align-items: center;
+    gap: 1em;
+}
+
+.kritisk-tænkning-3-4 .stjerne-3 img {
+    width: 85%;
+}
+
+.kritisk-tænkning-3-4 .stjerne-4 img {
+    width: 85%;
+    margin-left: -0.5em;
+}
+
+/* Styling af et tip section på kritisk tænkning siden */
+
+.et-tip-4 {
+    background-color: var(--red);
+    margin: 1.5em;
+    border-radius: 25px;
+    padding: 0.5em;
+}
+
+.et-tip-4 img {
+    width: 100%
+}
+
+/* Styler alle a-tags på kilderne med hover */
+.kilde a:hover {
+    font-weight: 700;
+}
 
 /* Styling af hvordan computer versionen skal se ud */
 
@@ -1419,6 +1545,10 @@ footer .bund-footer {
 }
 
 /* Intro indhold på forsiden */
+.grøn p {
+    font-size: 24px;
+}
+
 summary {
     display: none;
 }
@@ -1806,6 +1936,45 @@ iframe {
     flex-direction: row;
     align-items: center;
     margin: 0 1.5em 0 1.5em;
+}
+
+/* Styling af første section med 1 og 2 på kritisk tænkning siden til desktop */
+
+.kritisk-tænkning-1-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 20% 50%);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 1.5em 1.5em 1.5em;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.kritisk-tænkning-1-2 h2 {
+    font-size: 32px;
+}
+
+.kritisk-tænkning-1-2 p {
+    font-size: 18px;
+}
+
+/* Styling af første section med 3 og 4 på kritisk tænkning siden til desktop */
+.kritisk-tænkning-3-4 {
+    display: grid;
+    grid-template-columns: repeat(1, 20% 50%);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 1.5em 1.5em 1.5em;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.kritisk-tænkning-3-4 h2 {
+    font-size: 32px;
+}
+
+.kritisk-tænkning-3-4 p {
+    font-size: 18px;
 }
 
 }
